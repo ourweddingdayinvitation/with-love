@@ -17,11 +17,7 @@ export class AppComponent implements OnInit {
     this.audio.muted = true;
 
     // Try to play muted audio automatically
-    this.audio.play().then(() => {
-      this.isPlaying = true; 
-    }).catch(() => {
-      this.isPlaying = false;
-    });
+
   }
 
   toggleAudio() {
